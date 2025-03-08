@@ -25,13 +25,17 @@ public class crtlPrincipalProduccion implements MouseListener {
         }
 
         if (e.getSource() == vista.btnTrabajos) {
+            Vista.frmTrabajo.initfrmTrabajo();
+            vista.dispose();
+            /*
+            System.err.println("se dio clic");
             try {
                 Vista.frmTrabajo.initfrmTrabajo();
                 vista.dispose();
             } catch (Exception ex) {
                 ex.printStackTrace(); // Muestra el error en la consola
                 JOptionPane.showMessageDialog(null, "Error al abrir frmTrabajo: " + ex.getMessage());
-            }
+            }*/
         }
 
         if (e.getSource() == vista.BtnVolver) {

@@ -17,14 +17,14 @@ public class CtrlTrabajos  {
 
     private frmTrabajo vista;
     private Trabajos modeloTrabajos;
-    private EstadoTrabajo modeloEstadoTrabajo;
+   // private EstadoTrabajo modeloEstadoTrabajo;
     private UsuarioVendedor modeloUsuarioVendedor;
     private Cliente modeloCliente;
 
-    public CtrlTrabajos(frmTrabajo vista, Trabajos modeloTrabajos, EstadoTrabajo modeloEstadoTrabajo, UsuarioVendedor modeloUsuarioVendedor, Cliente modeloCliente) {
+    public CtrlTrabajos(frmTrabajo vista, Trabajos modeloTrabajos,  UsuarioVendedor modeloUsuarioVendedor, Cliente modeloCliente) {
         this.vista = vista;
         this.modeloTrabajos = modeloTrabajos;
-        this.modeloEstadoTrabajo = modeloEstadoTrabajo;
+       // this.modeloEstadoTrabajo = modeloEstadoTrabajo;
         this.modeloUsuarioVendedor = modeloUsuarioVendedor;
         this.modeloCliente = modeloCliente;
         

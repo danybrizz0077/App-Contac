@@ -29,12 +29,12 @@ public class frmTrabajo extends javax.swing.JFrame {
         public static void initfrmTrabajo(){
            frmTrabajo vista = new frmTrabajo();
           Trabajos modeloTrabajos = new Trabajos();
-           EstadoTrabajo modeloEstadoTrabajo = new EstadoTrabajo();
+          // EstadoTrabajo modeloEstadoTrabajo = new EstadoTrabajo();
            UsuarioVendedor modeloUsuarioVendedor = new UsuarioVendedor();
            Cliente modeloCliente = new Cliente();
 
         
-        CtrlTrabajos controlador = new CtrlTrabajos(vista, modeloTrabajos, modeloEstadoTrabajo,modeloUsuarioVendedor, modeloCliente);
+        CtrlTrabajos controlador = new CtrlTrabajos(vista, modeloTrabajos,modeloUsuarioVendedor, modeloCliente);
         
         vista.setVisible(true);
     }
@@ -500,7 +500,8 @@ public class frmTrabajo extends javax.swing.JFrame {
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new frmTrabajo().setVisible(true);
+               // new frmTrabajo().setVisible(true);
+               initfrmTrabajo();
             }
         });
     }
