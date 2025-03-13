@@ -55,7 +55,7 @@ public class UsuarioVendedor {
     try {
         PreparedStatement addUser = conexion.prepareStatement(
             "INSERT INTO UsuarioVendedor(ID_UsuarioVendedor, Nombre_Ven, Correo_Ven, Contrasena) " +
-            "VALUES (usuario_vendedor_seq.NEXTVAL, ?, ?, ?)"
+            "VALUES (SEQ_USUARIO_VENDEDOR.NEXTVAL, ?, ?, ?)"
         );
         // Establecer valores restantes de la consulta SQL
         addUser.setString(1, getNombre_Ven());
