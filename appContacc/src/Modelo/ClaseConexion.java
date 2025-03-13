@@ -5,9 +5,9 @@ import java.sql.*;
 public class ClaseConexion {
     
        //Variables para la cadena de conexión
-    private static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
+    private static final String URL = "jdbc:oracle:thin:@192.168.1.117:1521:xe";
     private static final String USUARIO = "SYSTEM";
-    private static final String CONTRASENA = "ITR2024";
+    private static final String CONTRASENA = "1234567";
     //Creación del metodo de conexión que retorna la conexión
     public static Connection getConexion() {
         try {
